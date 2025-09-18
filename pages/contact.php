@@ -1,0 +1,9 @@
+<div class="form_container">
+    <form action="" method="post">
+        <div class="title">Lets get in touch!</div>
+        <input type="text" name="name" placeholder="Enter Your Name">
+        <input type="text" name="email" placeholder="Enter Your Email">
+        <textarea name="message" placeholder="Enter the message" rows="10"></textarea>
+        <button class="submit_message">Submit</button>
+    </form>
+</div>
