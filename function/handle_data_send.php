@@ -1,6 +1,7 @@
 <?php
 require_once("./send_data.php");
 require_once("./head_to.php");
+require_once("./flash.php");
 $title = $_REQUEST["title"];
 $name = $_REQUEST["writer_name"];
 $blog = $_REQUEST["blog"];
@@ -10,9 +11,9 @@ try {
     } else {
         $is_sent = send_data($name, $title, $blog);
         if ($is_sent) {
-            echo "The blog is added";
+            flash('blog_added', 'success', 'Blog is added successfully');
         } else {
-            echo "Sorry! The blog could not be added";
+            flash('blog_not_added', 'error', 'Sorry! The blog could not be added');
         }
     }
     head_to('write_blog');

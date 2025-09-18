@@ -12,8 +12,9 @@
     <?php
     include("./components/nav_bar.php");
     include __DIR__ . "/./function/get_data.php";
+    $id = $_GET["id"];
     $title = $_GET["title"];
-    $blog = get_data("blogs", $title);
+    $blog = get_data("blogs", $id);
     foreach ($blog as $blog_content) {
         ?>
         <div class="container">

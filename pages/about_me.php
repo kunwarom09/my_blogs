@@ -1,5 +1,5 @@
 <?php
-$my_photo = "../image/my_photo.png"
+$my_photo = "../image/my_photo.png";
 
 ?>
 <div class="about_me_container">
