@@ -20,5 +20,4 @@ try {
 } catch (error) {
     throw new Exception('error!');
 }
-echo $title;
 ?>

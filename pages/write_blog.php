@@ -1,9 +1,9 @@
 <div class="form_container">
     <form action="/my_blogs/function/handle_data_send.php" method="post">
-        <div  class="title">Write you Blog</div>
+        <div  class="title">Write Your Blog</div>
         <?php
         require_once __DIR__ . '/../function/flash.php';
-        flash();
+        flash('');
         ?>
         <input name="writer_name" type="text" placeholder="Enter Writer Name">
         <input name="title" type="text" placeholder="Enter Title">

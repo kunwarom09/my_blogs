@@ -1,5 +1,5 @@
 <?php
-$my_photo = "../image/my_photo.png";
+$my_photo = "/my_blogs/image/my_photo.png";
 
 ?>
 <div class="about_me_container">
@@ -7,6 +7,7 @@ $my_photo = "../image/my_photo.png";
         <img src="<?php echo $my_photo?>" alt="">
     </div>
     <div class="my_desc">
+        <h1>Om Kunwar</h1>
         I am a passionate and dedicated Computer Engineering student currently in my fourth year of engineering.
         Throughout my academic journey, I have developed a strong foundation in computer science fundamentals, software
         development, and hardware systems. I have gained experience in programming languages such as C, C++, Java, and

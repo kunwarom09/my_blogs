@@ -68,6 +68,11 @@
     border-bottom: 1px solid black;
 }
 
+.title{
+    font-size: 25px;
+    font-weight: 500;
+}
+
 
 /* =====Blog Page===== */
 .blog_title {
@@ -158,4 +163,32 @@ button {
 
 .home_container a .blog_desc {
     font-size: 12px;
+}
+
+.alert.alert-success{
+    border: 1px solid rgb(49, 235, 49);
+    color: rgb(49, 235, 49);
+}
+.alert.alert-error{
+    border: 1px solid red;
+    color: red;
+}
+
+/* ======About Me===== */
+.about_me_container{
+    display: flex;
+    gap: 20px;
+}
+
+.about_me_container .my_image img{
+   height: 100%;
+}
+.about_me_container .my_desc{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.about_me_container .my_desc h1{
+    font-size: 50px;
+    font-weight: 600;
 }
