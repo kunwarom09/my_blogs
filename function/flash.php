@@ -34,7 +34,28 @@ function display_all_flash_message()
     }
 }
 
-function flash(string $name = '', string $type = '', string $message = '')
+function displayFlashMessage(string $key)
+{
+    display_flash_message($key);
+}
+
+function saveFlashMessage(string $key, string $type, string $message)
+{
+    create_flash_message($type, $message, $key);
+}
+
+function showAllFlashMessage()
+{
+    display_all_flash_message();
+}
+
+/**
+ * it is always easier to code
+ * it is harder to read the code
+ *
+ *
+ */
+/*function flash(string $name = '', string $type = '', string $message = '')
 {
     if ($name !== '' && $type !== '' && $message !== '') {
         create_flash_message($type, $message, $name);
@@ -43,5 +64,5 @@ function flash(string $name = '', string $type = '', string $message = '')
     } elseif ($name === '' && $type === '' && $message === '') {
         display_all_flash_message();
     }
-}
+}*/
 ?>

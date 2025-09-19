@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../config/db_functions.php';
 function get_data($table, $id = '')
 {
     if ($id == '') {
@@ -7,7 +7,7 @@ function get_data($table, $id = '')
     } else {
         $sql = "SELECT * FROM `$table` WHERE id = '$id'";
     }
-    $stmt = db()->prepare($sql);
+    $stmt = dbConnector()->prepare($sql);
     $stmt->execute();
     $result = $stmt->fetchAll();
     return $result;
