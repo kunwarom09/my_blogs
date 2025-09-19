@@ -1,12 +1,12 @@
 <?php
-return [
-    'db' => [
-        'username' => 'root',
-        'password' => 'root',
-        'dbname' => 'my_blog',
-        'host' => 'localhost',
-    ],
-    'site' => [
-        'base_url' => 'http://localhost/om/'
-    ]
-];
+
+
+//scane all the except excpert config.php
+$files = ....
+
+$config = [];
+foreach ($files as $file){
+    $config[] = require $file;
+}
+
+return $config;

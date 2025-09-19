@@ -1,5 +1,4 @@
 <?php
-session_start();
 function create_flash_message(string $type, string $message, string $name)
 {
     if (isset($_SESSION["FLASH MESSAGE"][$name])) {
